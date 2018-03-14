@@ -1,6 +1,6 @@
 
 
-class UserService {
+export default class UserService {
 
     getUser() {
       return {
@@ -8,8 +8,4 @@ class UserService {
         b: "x"
       };
     }
-  }
-
-module.exports = {
-  UserService
-};
+}

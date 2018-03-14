@@ -1,6 +1,6 @@
 
 
-class UserController {
+export default class UserController {
     constructor({ userService }) {
       this.userService = userService
     }
@@ -10,6 +10,4 @@ class UserController {
     }
 }
 
-module.exports = {
-  UserController,
-};
+
