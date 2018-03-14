@@ -9,5 +9,7 @@ export default class NewSchedulerService {
         for (var n of this.newSchedulerNotifications) {
             n.sendMessage();
         }
+
+        return "Visit scheduled"; 
     }
 }
