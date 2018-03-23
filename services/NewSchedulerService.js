@@ -1,15 +1,27 @@
 
 export default class NewSchedulerService {
-    constructor({ newSchedulerNotifications }) {
+    constructor({ newSchedulerNotifications, currentUser }) {
         this.newSchedulerNotifications = newSchedulerNotifications;
+        this.currentUser = currentUser;
     }
 
     scheduleVisit(user, house) {
-        // Schedule visit.
+        //  TODO: Schedule visit.
         for (var n of this.newSchedulerNotifications) {
             n.sendMessage();
         }
 
-        return "Visit scheduled"; 
+        return "Visit scheduled";
+    }
+
+    scheduleVisitFromWeb() {
+
+        for (var n of this.newSchedulerNotifications) {
+            n.sendMessage();
+        }
+        const messageReturn = `Scheduling visit for ${JSON.stringify(this.currentUser)}`;
+        console.log(messageReturn);
+
+        return messageReturn;
     }
 }

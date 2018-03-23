@@ -10,7 +10,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "awilix": "^3.0.6"
+    "awilix": "^3.0.6",
+    "body-parser": "^1.18.2",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.12.3"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",

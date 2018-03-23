@@ -1,12 +1,12 @@
 
 
 export default class UserController {
-    constructor({ userService }) {
-      this.userService = userService
+    constructor({ userLoggedRetriever }) {
+      this.userLoggedRetriever = userLoggedRetriever
     }
 
-    getUser() {
-      return this.userService.getUser()
+    getCurrentUser() {
+      return this.userLoggedRetriever.getUser()
     }
 }
 
